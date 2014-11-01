@@ -6,7 +6,7 @@
  * This example is coded out of my head and NOT TESTED but shoud work ^^ 
  *
  * ATTENTION again!!
- * This code contain an infinity look, dont run this code over your webserver with http://abc.efg/example1.php
+ * This code contain an infinity loop, dont run this code over your webserver with http://abc.efg/example1.php
  * Run on the CLI with php5 example1.php and kill it with CTRL + C !
  *
  * Daniel Ziegler <daniel@statusengine.org>
