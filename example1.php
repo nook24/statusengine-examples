@@ -5,6 +5,10 @@
  * ATTENTION!!!
  * This example is coded out of my head and NOT TESTED but shoud work ^^ 
  *
+ * ATTENTION again!!
+ * This code contain an infinity look, dont run this code over your webserver with http://abc.efg/example1.php
+ * Run on the CLI with php5 example1.php and kill it with CTRL + C !
+ *
  * Daniel Ziegler <daniel@statusengine.org>
  * License: MIT License 
  */
@@ -46,6 +50,10 @@ class StatusengineExample1{
 		$this->gmanClient->addFunction('statusngin_contactnotificationdata',	[$this, 'devNull']);
 		$this->gmanClient->addFunction('statusngin_contactnotificationmethod',	[$this, 'devNull']);
 		$this->gmanClient->addFunction('statusngin_eventhandler',				[$this, 'devNull']);
+		
+		//Tell the gearman client to work
+		//This is an infinity look, kill with CTRL + C
+		while($this->gmanClient->work());
 	}
 
 	//This function get called for everything inside of dumpObjects Q
