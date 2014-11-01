@@ -7,7 +7,7 @@ If you are looking for Statusengine browse to:
 https://github.com/nook24/statusengine
 
 
-Licence1
+Licence
 --------------
 The MIT License (MIT)
 
